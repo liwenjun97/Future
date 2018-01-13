@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/other_circle"
+        android:layout_height="0dp">
+        <Button
+            android:id="@+id/cancel"
+            android:layout_weight="2"
+            android:background="@color/other_circle"
+            android:textColor="#ffffff"
+            android:text="返回"
+            android:textSize="@dimen/back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/plan_title"
+            android:layout_weight="6"
+            android:text="制定计划"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/title"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <View
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <View
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFFFFF" />
+    <LinearLayout
+        android:layout_weight="7"
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.example.cslab.future.util.CircleLayout
+                android:id="@+id/circle_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:aroundCircleCompleteColor="#08a943"
+                app:aroundCircleDefColor="@color/around_circle_def_color"
+                app:aroundCircleDoingColor="@color/around_circle_doing_color"
+                app:centerArcColor="@color/arc_change"
+                app:centerArcColorDef="@color/arc_default"
+                app:centerCircleColor="@color/center_circle_color"
+                app:centerCircleText="NOT"
+                app:centerCircleTextColor="#ffffff"
+                app:centerCircleTextSize="24sp"
+                app:aroundSmallCircleColor="#e13039"
+                app:titleSize="12sp"
+                app:titleColor="#000000"/>
+
+            <Button
+                android:background="#00ffffff"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/center_button"
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

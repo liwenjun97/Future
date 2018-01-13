@@ -1,0 +1,91 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--主布局，ToolBar下面的布局-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <include layout="@layout/tool_bar" />
+                <include layout="@layout/custom_drawer"/>
+                <!--DrawerLayout-->
+            </LinearLayout>
+
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/mainContent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_above="@+id/bottom_tab_bar"
+                android:layout_weight="8">
+
+            </android.support.v4.view.ViewPager>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#999999" />
+
+            <RadioGroup
+                android:id="@+id/bottom_tab_bar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yesterday"
+                    style="@style/RadioButton"
+                    android:drawableTop="@drawable/radiobutton1" />
+                <!--android:text="昨天"-->
+                <!--android:textColor="#1296db"-->
+
+                <RadioButton
+                    android:id="@+id/today"
+                    style="@style/RadioButton"
+                    android:drawableTop="@drawable/radiobutton2" />
+
+                <RadioButton
+                    android:id="@+id/tomorroy"
+                    style="@style/RadioButton"
+                    android:drawableTop="@drawable/radiobutton3" />
+            </RadioGroup>
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_centerHorizontal="true"
+            android:id="@+id/mylayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+        </FrameLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/menuitem"/>
+
+
+</android.support.v4.widget.DrawerLayout>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+
+

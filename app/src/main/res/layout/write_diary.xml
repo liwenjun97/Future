@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/other_circle"
+        android:padding="1dp">
+        <Button
+            android:id="@+id/returntoday"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="返回"
+            android:background="#00ffffff"
+            android:textSize="@dimen/back"
+            android:textColor="#ffffff"
+            />
+        <TextView
+            android:id="@+id/diary_time"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/title"
+            android:gravity="center"
+            android:text="2017-5-7"/>
+
+        <ImageView
+            android:id="@+id/upcloud"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_up"
+            android:padding="6dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:padding="2dp"
+        android:background="#e6e6e6"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/diary"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:gravity="top" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

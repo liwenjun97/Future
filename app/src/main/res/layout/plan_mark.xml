@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat.NoActionBar">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/title"
+        android:text="请为你的计划添加一句话描述"
+        android:background="@color/other_circle"
+        android:textColor="#ffffff" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#000000" />
+
+    <EditText
+        android:id="@+id/mark_plan"
+        android:layout_width="match_parent"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_height="0dp"
+        android:layout_weight="7.5"
+        android:background="@null"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:maxLength="100"
+        android:maxLines="10"
+        android:minLines="8"
+        android:textColor="#000000" />
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <View
+            android:layout_weight="9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/textcount"
+            android:text="0"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:text="/100"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#000000" />
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <View
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/submit_plan"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:background="@drawable/other_btn"
+            android:text="提 交" />
+        <View
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

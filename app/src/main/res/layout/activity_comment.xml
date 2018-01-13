@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dreamLin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:orientation="horizontal"
+        android:background="@color/other_circle"
+        android:padding="1dp">
+        <Button
+            android:id="@+id/outComment"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:background="#00ffffff"
+            android:textSize="@dimen/back"
+            android:textColor="#ffffff"
+            android:padding="0dp"
+            />
+        <TextView
+            android:id="@+id/chatroomTitle"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/title"
+            android:gravity="center"
+            android:text="评 论"
+            android:padding="0dp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ListView
+            android:padding="5dp"
+            android:id="@+id/commentList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+    </LinearLayout>
+</LinearLayout>
+

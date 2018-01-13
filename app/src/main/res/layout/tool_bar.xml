@@ -1,0 +1,21 @@
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#317a9c"
+    android:theme="@style/ToolBarTheme">
+
+    <!--toolbar默认的title离抽屉按钮稍远，所以将代码中的title改为透明，布局文件中将创建TextView作为title-->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="future"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:clickable="true"/>
+
+</android.support.v7.widget.Toolbar>

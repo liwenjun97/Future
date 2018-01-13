@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/imageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@mipmap/test1"
+            android:maxHeight="300dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/dream_Txt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="这是我的梦想"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:maxLines="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:id="@+id/clickBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/comment1" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/commentNum"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent"
+                    android:text="1000"
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:maxLines="1"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"/>
+                <Button
+                    android:id="@+id/commentBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/click3" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/clickNum"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:layout_height="match_parent"
+                    android:text="9999"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"/>
+        </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
